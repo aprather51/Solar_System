@@ -1,0 +1,26 @@
+{
+  "name": "solar-system",
+  "version": "1.0.0",
+  "description": "Our Solar System - Node-ExpressJS and Json",
+  "main": "app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aprather51/"
+  },
+  "keywords": [
+    "solar",
+    "system",
+    "node",
+    "js",
+    "json"
+  ],
+  "author": "Arthur Prather",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4"
+  }
+}
