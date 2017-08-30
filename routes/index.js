@@ -7,8 +7,8 @@ exports.home = function(req, res){
 
 //Single Page
 exports.planetSingle = function(req, res){
-    var planets_numbers = req.params.planets_numbers;
-    res.send("Planet Number =" + planets_numbers);
+    var planets_number = req.params.planets_number;
+    res.send("Planet Number =" + planets_number);
 };
 
 //Error
