@@ -4,6 +4,7 @@
   "description": "Our Solar System - Node-ExpressJS and Json",
   "main": "app",
   "scripts": {
+    "start": "parallelshell \"npm run scss\" \"node app.js\" ",
     "scss": "node-sass -w -r src/scss/ -o public/css/ && postcss -u autoprefixer -r public/css/*"
   },
   "repository": {
@@ -24,6 +25,8 @@
     "ejs": "^2.5.7",
     "express": "^4.15.4",
     "node-sass": "^4.5.3",
+    "node-sass-middleware": "^0.11.0",
+    "parallelshell": "^3.0.1",
     "postcss-cli": "^4.1.0"
   }
 }

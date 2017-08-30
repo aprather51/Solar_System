@@ -1,34 +1,34 @@
 var express = require('express');
+var sass = require('node-sass-middleware');
 var app = express();
 
-//enable ejs
-app.set('view engine', 'ejs');
+app.use(sass({
+    src: __dirname + '/src/scss/',
+    dest: __dirname + '/public/css',
+    debug: true,
+    outputStyle: 'compressed',
+    prefix: '/css'
+}));
 
 //External Path
 app.use(express.static(__dirname + "/public"));
 
-//Routes
+//enable ejs
+app.set('view engine', 'ejs');
 
+//Routes
+var routes = require('./routes');
+
+//**********
 
 //Home
-app.get('/', function(req, res){
-    res.render('home', {
-        nbr: '1',
-        name: 'Mercury',
-        desc: 'The 1st planet revloves 88 days around sun...',
-        list: ['Apple', 'Banana', 'Orange']
-    });
-});
+app.get('/', routes.home);
 
-app.get('/planets/:planets_numbers?', function(req, res){
-    var planets_numbers = req.params.planets_numbers;
-    res.send("Planet Number =" + planets_numbers);
-});
+//Single Page - of all planets
+app.get('/planets/:planets_numbers?', routes.planetSingle);
 
 //Error
-app.get('*', function(req, res){
-    res.send("404 Error - Page Not Found");
-});
+app.get('*', routes.error);
 
 //Server
 app.listen(3000, function(){
