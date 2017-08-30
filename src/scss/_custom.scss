@@ -1,0 +1,23 @@
+body {
+    padding-top: 5rem;
+  }
+  .starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  $red: red;
+  $yellow: yellow;
+  $green: green;
+
+.red{
+    color: $red;
+  }
+
+.yellow{
+  color: $yellow;
+}
+
+.green{
+  color: $green;
+}
