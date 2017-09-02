@@ -1,5 +1,16 @@
-<% include partials/header.ejs %>
+<% include partials/head.ejs %>
+<% include partials/nav.ejs %>
 
-<h1 class="yellow">This is Body</h1>
 
-<% include partials/footer.ejs %>
+<!--images arrays-->
+
+<!-- for more see 25:19 part 2 -->
+<% for(i = 0; i < planets.length; i++) { %>
+<a href="/planets/<%= planets[i].planet_number %>">
+    <img src="/img/<%= planets[i].imgPost %>">
+</a>
+<% } %>
+
+
+<% include partials/foot.ejs %>
+

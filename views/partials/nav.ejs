@@ -1,0 +1,11 @@
+
+<ul>
+    <li><a href="/">Home</a></li>
+    <li>
+        <ul>
+            <% for(i = 0; i < planets.length; i++) { %>
+                <a href="/planets/<%= i + 1 %>"> <%= planets[i].planet_name %></a> 
+            <% } %>
+        </ul>
+    </li>
+</ul>

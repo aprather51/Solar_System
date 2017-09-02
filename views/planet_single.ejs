@@ -1,0 +1,14 @@
+<% include partials/head.ejs %>
+<% include partials/nav.ejs %>
+
+<img src="/img/<%= planet.banner %>" alt="">
+<h1>#<%= planet.planet_number %> <%= title %> </h1>
+<p>nickname:<%= planet.nickname %></p>
+<p>distance:<%= planet.distance %></p>
+<p>orbit:<%= planet.orbit %></p>
+<p>description: <%= planet.description %></p>
+<img src="/img/<%= planet.imgPost %>" alt="">
+
+<% include partials/foot.ejs %>
+
+
