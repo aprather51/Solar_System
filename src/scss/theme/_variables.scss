@@ -1,0 +1,32 @@
+/* Common Container Sizes*/
+
+$xsmall: 600px;
+$small: 800px;
+$medium: 1000px;
+$large: 1200px;
+
+/* Breakpoints*/
+
+$mobile: $xsmall;
+$tablet: $small;
+$desktop: $medium;
+
+
+//***  Color  ***//
+$black: #000;
+$white: #fff;
+
+$bgColor: $black;
+$fontPrimary: #ddd;
+$fontSecondary: #FBD058;
+
+/* Common Grayness */
+
+$base:           #000;
+$gray-dark:     lighten( $base, 13.3%); //#222
+$gray-med:      lighten( $base, 26.7%); //#444
+$gray:          lighten( $base, 53.3%); //#888
+$gray-light:    lighten( $base, 73.3%); //#bbb
+$gray-pale:     lighten( $base, 93.3%); //#eee
+
+/* color */

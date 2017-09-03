@@ -1,11 +1,14 @@
-
-<ul>
-    <li><a href="/">Home</a></li>
-    <li>
+<div class="navBox">
+    <div class="aHome"><a href="/">Home</a></div>
+    <div class="dropdown">
+        <input type="checkbox" id="checkbox-toggle">
+        <label for="checkbox-toggle"> Planets &#709;</label>
         <ul>
             <% for(i = 0; i < planets.length; i++) { %>
-                <a href="/planets/<%= i + 1 %>"> <%= planets[i].planet_name %></a> 
+                <li><a href="/planets/<%= i + 1 %>"> <%= planets[i].planet_name %></a></li>
             <% } %>
         </ul>
-    </li>
-</ul>
+    </div>
+</div>
+
+

@@ -1,4 +1,6 @@
 /node_modules
+/edit
 
 npm-debug.log
 yarn-error.log
+placehold.md

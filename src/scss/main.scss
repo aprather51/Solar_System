@@ -7,8 +7,11 @@
 
 // Core variables and mixins
 @import "bootstrap/variables";
+@import "theme/variables";
 @import "bootstrap/mixins";
-@import "bootstrap/custom";
+@import "theme/mixins";
+@import "theme/override";
+
 
 // Reset and dependencies
 @import "bootstrap/normalize";
@@ -54,4 +57,4 @@
 @import "bootstrap/utilities";
 
 //custom
-@import "custom";
+@import "theme/custom";
