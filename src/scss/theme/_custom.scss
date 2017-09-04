@@ -141,7 +141,9 @@ input[type=checkbox]:checked ~ ul{ display: block; }
     .row{
       padding-top: 1rem;
       img{
-        width: 100%;
+        padding-top: 6rem;
+        padding-bottom: 1rem;
+        width: 50%;
         margin: 0 auto;
         display: block;
       }
@@ -152,7 +154,10 @@ input[type=checkbox]:checked ~ ul{ display: block; }
   }
 }
 
-
+// Effects
+#lazy{
+  opacity: 0;
+}
 
 //mobile
 @media(min-width: 0){
@@ -167,9 +172,9 @@ input[type=checkbox]:checked ~ ul{ display: block; }
 .hPage-bg{
   header{
     padding: .5rem 0;
-    font-size: 2.5rem;
     .headTitle{
       line-height: 1.7;
+      font-size: 2.5rem;
     }
   }
 }

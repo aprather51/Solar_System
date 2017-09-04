@@ -1,11 +1,12 @@
 
     </div><!-- container-fluid -->
-    <h3>This is footer</h3>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--<script src="/js/jquery.min.js"></script>-->
-    <script src="/js/jquery.lazyload.js"></script>
-    <script type="text/javascript">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <script src="/js/jquery.min.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#lazy").delay(600).animate({"opacity": "1"}, 700);
+        });
     </script>
 
 </body>

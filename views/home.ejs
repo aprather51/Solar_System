@@ -1,13 +1,13 @@
 <% include partials/head.ejs %>
 
 <!-- for more see 25:19 part 2 -->
-<div class="hPage-bg">
+<div class="hPage-bg" >
     <% include partials/nav.ejs %>
     <header>
         <h1 class="headTitle text-center">Our Solar System</h1>
     </header>
     <div class="container">
-        <div class="row grid">
+        <div class="row grid" id="lazy">
             <% for(i = 0; i < planets.length; i++) { %>
             <div class="col-lg-3 col-md-6 col-xs-12 imgBox">
                 <a href="/planets/<%= planets[i].planet_number %>">
