@@ -9,12 +9,12 @@
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="info-body text-center">
-                    <h1><%= title %></h1>
-                    <h4><%= planet.nickname %></h4>
-                    <p>Planet Number: <%= planet.planet_number %></p>
-                    <p>Distance: <%= planet.distance %></p>
-                    <p>Orbit: <%= planet.orbit %></p>
-                    <p><%= planet.description %></p>
+                    <h1 class="info-title"><%= title %></h1>
+                    <h5 class="info-second highlight"><%= planet.nickname %></h5>
+                    <p class="info-line">Planet Number: &nbsp;<strong><%= planet.planet_number %></strong></p>
+                    <p class="info-line">Distance: &nbsp;<strong><%= planet.distance %></strong></p>
+                    <p class="info-line">Orbit: &nbsp;<strong><%= planet.orbit %></strong></p>
+                    <p class="info-description"><%= planet.description %></p>
                 </div>
             </div> 
         </div>

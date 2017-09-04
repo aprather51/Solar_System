@@ -3,9 +3,32 @@
 // ===============
 // Pre-Requesties
 //================
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
 html, body{ height: 100%;}
 
+body{ font-family: 'Montserrat', sans-serif;}
+
 a{ text-decoration: none !important; }
+
+.highlight{ color: $fontSecondary;}
+
+.info-body{
+  .info-second{ 
+    line-height: .5;
+    margin-bottom: 2rem;
+  }
+  .info-line{
+    line-height: .5;
+    strong{
+      color: $fontSecondary;
+    }
+  }
+  .info-description{
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+}
 
 // ===============
 // Page Backgrond
@@ -87,6 +110,7 @@ input[type=checkbox]:checked ~ ul{ display: block; }
     .grid{
       margin-bottom: 1rem;
       height: 78%;
+      padding: 2rem;
       .imgBox{
         max-width: 100%;
         max-height: 100%;
@@ -115,7 +139,7 @@ input[type=checkbox]:checked ~ ul{ display: block; }
   -ms-transform: translate(-50%, -50%);
   p{
     font-size: 1.3rem;
-    color: $fontPrimary;
+    color: $fontSecondary;
     @include bgColorOpacity($black, .5);
     padding: .3rem 2rem;
     line-height: 1.5;
@@ -150,6 +174,7 @@ input[type=checkbox]:checked ~ ul{ display: block; }
       .info-body{
         @include bgColorOpacity($white, 0.0);
         color: $fontPrimary;
+        padding: 0 1rem;
       }
   }
 }
@@ -161,9 +186,7 @@ input[type=checkbox]:checked ~ ul{ display: block; }
 
 //mobile
 @media(min-width: 0){
-  .grid{
-    padding: 1rem;
-  }
+  //Home Page
 }
 
 //Desktop
@@ -177,6 +200,9 @@ input[type=checkbox]:checked ~ ul{ display: block; }
       font-size: 2.5rem;
     }
   }
+  .grid{
+    padding: 0;
+  }
 }
 //Single Page
   .sPage-bg{
@@ -185,7 +211,7 @@ input[type=checkbox]:checked ~ ul{ display: block; }
       padding-top: 5rem;
       img{
         width: 80%;
-        //display: none;
+        padding:0;
       }
       .info-body{
         width: 80%;
