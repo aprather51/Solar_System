@@ -20,11 +20,11 @@ A Node with ExpressJS web application framework and use JSON as data looping tha
 
 ## License
 
-The code is open source and available under the [MIT License](https://github.com/aprather51/NPM_Script_Taskrunner/blob/master/LICENSE.md).
+The code is open source and available under the [MIT License](https://github.com/aprather51/Solar_System/blob/master/LICENSE.md).
 
 ## Bugs Report
 
-[Bugs](https://github.com/aprather51/NPM_Script_Taskrunner/issues)
+[Bugs](https://github.com/aprather51/Solar_System/issues)
 
 
 
