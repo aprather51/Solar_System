@@ -13,6 +13,8 @@ a{ text-decoration: none !important; }
 
 .highlight{ color: $fontSecondary;}
 
+.text-center{ text-align: center;}
+
 .info-body{
   .info-second{ 
     line-height: .5;
@@ -80,7 +82,7 @@ ul{
   position: absolute;
   display: none;
   list-style: none;
-  width: 100%;
+  width: 70%;
   z-index: 1;
   margin:0;
   padding:0;

@@ -31,9 +31,9 @@ app.get('/planets/:planets_numbers?', routes.planetSingle);
 app.get('*', routes.error);
 
 //Server
-app.listen(3000, function(){
-    console.log("Server is listening")
-})
+// app.listen(3000, function(){
+//     console.log("Server is listening")
+// })
 
 //server heroku or cloud
-//app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000);
