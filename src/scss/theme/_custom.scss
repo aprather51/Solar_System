@@ -29,6 +29,11 @@ a{ text-decoration: none !important; }
     margin-bottom: 0;
   }
 }
+// ========================
+// Fade In on load Effects
+//=========================
+
+#lazy{ opacity: 0;}
 
 // ===============
 // Page Backgrond
@@ -178,20 +183,21 @@ input[type=checkbox]:checked ~ ul{ display: block; }
       }
   }
 }
-
-// Effects
-#lazy{
-  opacity: 0;
+footer{
+  p{
+    font-size: .5rem;
+    color: $gray-med;
+  }
 }
 
-//mobile
-@media(min-width: 0){
-  //Home Page
-}
+//************************
+//  Responsive: Desktop 
+//************************
 
-//Desktop
 @media(min-width: $tablet){
-//Home Page
+//=============
+//  Home Page
+//=============
 .hPage-bg{
   header{
     padding: .5rem 0;
@@ -204,7 +210,9 @@ input[type=checkbox]:checked ~ ul{ display: block; }
     padding: 0;
   }
 }
-//Single Page
+//=============
+//  Single Page
+//=============
   .sPage-bg{
     height: 100%;
     .row{
@@ -221,4 +229,9 @@ input[type=checkbox]:checked ~ ul{ display: block; }
     }
   }
 
+  footer{
+    p{
+      font-size: .7rem;
+    }
+  }
 }
