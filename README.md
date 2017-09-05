@@ -3,7 +3,7 @@
 A Node with ExpressJS web application framework and use JSON as data looping that contain all info of 8 planets in our solar system.  A Bootstrap4 scss framework (Own modified) is used as grid layout on responsive devices. This my experimental and learning process on JavaScript web application. 
 
 ## Link to view project. 
-
+[https://solar-system-a.herokuapp.com/](https://solar-system-a.herokuapp.com/)
 
 ## Dependencies Used
 
